@@ -209,7 +209,7 @@ func resourceApiManagementSchema() map[string]*pluginsdk.Schema {
 						Type:         pluginsdk.TypeInt,
 						Optional:     true,
 						Computed:     true,
-						ValidateFunc: validation.IntBetween(0, 12),
+						ValidateFunc: validation.IntBetween(0, 32),
 					},
 
 					"zones": commonschema.ZonesMultipleOptional(),
